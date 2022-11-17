@@ -1,0 +1,6 @@
+-   id: import-future-annotations
+    name: Add import responsible for postponed evaluation of annotations to python files
+    description: This hook checks presence of import `from __future__ import annotations` in python files and adds it if missing
+    entry: import-future-annotations
+    language: python
+    types: [python]
