@@ -48,7 +48,7 @@ def main() -> int:
     parser.add_argument(
         "--check-only",
         action="store_true",
-        help="Doesn't modify files, only checks.",
+        help="Don't modify files, only check.",
     )
     parser.add_argument(
         "--skip-empty", action="store_false", help="Skip files of size 0."
