@@ -14,7 +14,7 @@ pip install import-future-annotations
 
 Additional options:
 - `--check-only`: Don't modify files, only check. If script is applicable to any given file, the exit status code will be 1.
-- `--skip-empty`: Skip files of size 0.
+- `--allow-empty`: Add import to empty python files aswell.
 
 ## As a pre-commit hook
 
