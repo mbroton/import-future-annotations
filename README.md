@@ -29,7 +29,7 @@ Sample `.pre-commit-config.yaml`:
 ```
 
 
-# How does it work?
+## How does it work?
 
 `file.py` before:
 ```python
