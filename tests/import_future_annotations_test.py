@@ -152,7 +152,7 @@ def test_main(
     expected_exit_code,
 ):
     temp_file.write_text(source)
-    args = ["ignored", str(temp_file.resolve())]
+    args = [str(temp_file.resolve())]
     if check_only:
         args.append("--check-only")
     if allow_empty:
@@ -170,7 +170,7 @@ def test_main_multiple_files(tmp_path):
         file.write_text(source)
 
     paths = [str(f.resolve()) for f in files]
-    args = ["ignored", *paths]
+    args = [*paths]
 
     exit_code = main(args)
     assert exit_code == 1
@@ -179,6 +179,6 @@ def test_main_multiple_files(tmp_path):
 
 
 def test_main_no_files():
-    args = ["ignored"]
+    args = []
     exit_code = main(args)
     assert exit_code == 0
