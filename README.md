@@ -23,7 +23,7 @@ See [pre-commit](https://github.com/pre-commit/pre-commit) for instructions
 Sample `.pre-commit-config.yaml`:
 ```yaml
 -   repo: https://github.com/mbroton/import_future_annotations
-    rev: v0.0.1
+    rev: v0.1.0
     hooks:
     -   id: import-future-annotations
 ```
