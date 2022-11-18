@@ -58,7 +58,7 @@ def main(argv: list | None = None) -> int:
     args = parser.parse_args(argv)
 
     status = 0
-    for filename in args.filenames[1:]:
+    for filename in args.filenames:
         status |= _fix_file(filename, args)
 
     return status
